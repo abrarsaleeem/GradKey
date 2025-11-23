@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #131314;
+    color: #ebebeb;
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+.navlinks .active{
+    color: #fff;
+}
+
+/* Styling Header */
+
+#header{
+    width: 100%;
+}
+
+nav{
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.brand-name #gradkey{
+    text-decoration: none;
+    font-size: 25px;
+    color: #ebebeb;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+}
+
+.navlinks{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navlinks a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #bbbbbb;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    transition: all 0.2s ease;
+}
+
+.navlinks a:hover{
+    color: #ffffff;
+}
+
+/* Styling Hero Section */
+
+#hero{
+    width: 100%;
+}
+
+.container{
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    gap: 40px;
+    border-bottom: 1px solid #3e3e3e;
+}
+
+.gradient-display{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 170px 0;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, #0a7a63, #9b0f12);
+}
+
+.gradient-display i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    color: #ebebeb;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 8px;
+    border-radius: 50%;
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.gradient-display i:hover{
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+button{
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #eeeeee;
+    background-color: #1e1e1e;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    letter-spacing: 0.35px;
+    cursor: pointer;
+    user-select: none;
+}
+
+button:hover{
+    background-color: #2b2b2b;
+}
+
+.copyCode{
+    max-width: 475px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 10px 0;
+    font-family: monospace;
+    font-size: 14px;
+    color: #f1f1f1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.copyCode:hover{
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.copyCode i{
+    font-size: 20px;
+    opacity: 0.8;
+    transition: 0.2s ease;
+}
+
+.copyCode:hover i{
+    opacity: 1;
+}
+
+
+/* Footer Styling */
+
+#footer{
+    width: 100%;
+    padding: 21px 0;
+}
+
+.footer-container{
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+.footer-container p{
+    margin: 0;
+}
+
+.social-links a{
+    color: #bbbbbb;
+    margin-left: 15px;
+    font-size: 18px;
+    transition: all 0.2s ease;
+}
+
+.social-links a:hover{
+    color: #fff;
+}
