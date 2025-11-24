@@ -58,6 +58,14 @@ nav{
     color: #ffffff;
 }
 
+#menuIcon {
+    display: none;
+    font-size: 23px;
+    color: #ebebeb;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
 /* Styling Hero Section */
 
 #hero{
@@ -145,6 +153,13 @@ button:hover{
     user-select: none;
 }
 
+/* #copyText {
+    white-space: normal;
+    word-break: break-all;
+    text-align: left;
+    margin-right: 10px;
+} */
+
 .copyCode:hover{
     background: rgba(255, 255, 255, 0.08);
 }
@@ -159,7 +174,6 @@ button:hover{
     opacity: 1;
 }
 
-
 /* Footer Styling */
 
 #footer{
@@ -173,7 +187,7 @@ button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 10px;
     font-size: 14px;
     color: #bbbbbb;
@@ -192,4 +206,50 @@ button:hover{
 
 .social-links a:hover{
     color: #fff;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768.99px) {
+    nav{
+        padding: 18px 28px;
+    }
+
+    .brand-name #gradkey{
+        font-size: 23px;
+    }
+
+    .navlinks{
+        display: none;
+    }
+
+    #menuIcon{
+        display: block;
+    }
+
+    .container{
+        padding: 26px 28px;
+    }
+
+    .button-div{
+        gap: 24px;
+    }
+
+    .gradient-display{
+        width: 100%;
+        padding: 150px 0;
+    }
+    
+    #footer{
+        padding: 20px 0;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 28px;
+    }
+
 }
