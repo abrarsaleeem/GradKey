@@ -3,6 +3,11 @@ let button2 = document.getElementById("rightBtn");
 let gradDisplay = document.getElementById("displayGrad");
 let copyBox = document.querySelector(".copyCode");
 let copyBoxText = document.getElementById("copyText");
+// Mobile Menu Get Elements
+let mobileMenu = document.getElementById("mobileMenu");
+let menuIcon = document.getElementById("menuIcon");
+let closeMenu = document.getElementById("closeMenu");
+let overlay = document.getElementById("overlay");
 
 let hexValues = () => {
     let myHexValues = "0123456789abcdef";
@@ -47,3 +52,17 @@ const handleCopyBox = () => {
 button1.addEventListener('click', handleButton1);
 button2.addEventListener('click', handleButton2);
 copyBox.addEventListener('click', handleCopyBox);
+// Open Menu
+menuIcon.addEventListener("click", () => {
+    mobileMenu.classList.add("active");
+    overlay.classList.add("active");
+});
+// Close Menu
+closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+    overlay.classList.remove("active");
+});
+overlay.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+    overlay.classList.remove("active");
+});

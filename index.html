@@ -24,13 +24,24 @@
             </div>
             <!-- Navigation Links -->
             <div class="navlinks">
-                <a href="" class="active">Gradient</a>
+                <a href="" class="active-link">Gradient</a>
                 <a href="">Palettes</a>
                 <a href="">Saved</a>
                 <a href="">Contact</a>
             </div>
             <!-- Menu-Bar -->
             <i class="ri-menu-line" id="menuIcon"></i>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <i class="ri-close-line" id="closeMenu"></i>
+                <a href="" class="active-link">Gradient</a>
+                <a href="">Palettes</a>
+                <a href="">Saved</a>
+                <a href="">Contact</a>
+            </div>
+            <!-- Overlay -->
+            <div class="overlay" id="overlay"></div>
         </nav>
     </header>
     <!-- End Header Section -->
@@ -39,13 +50,13 @@
     <main id="hero">
         <div class="container">
             <div class="gradient-display" id="displayGrad">
-                <i class="ri-heart-line" title="Favourite"></i>
+                <i class="ri-heart-line" title="Add to Favourite"></i>
             </div>
             <div class="button-div">
                 <button id="leftBtn">#0a7a63</button>
                 <button id="rightBtn">#9b0f12</button>
             </div>
-            <div class="copyCode" title="Click to Copy">
+            <div class="copyCode" title="Copy to Clipboard">
                 <span id="copyText">background-image: linear-gradient(to right, #0a7a63, #9b0f12)</span>
                 <i class="ri-file-copy-line"></i>
             </div>
