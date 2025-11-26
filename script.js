@@ -8,6 +8,8 @@ let mobileMenu = document.getElementById("mobileMenu");
 let menuIcon = document.getElementById("menuIcon");
 let closeMenu = document.getElementById("closeMenu");
 let overlay = document.getElementById("overlay");
+// Save Gradient in LocalStorage
+let favIcon = document.getElementById("savedIcon");
 
 let hexValues = () => {
     let myHexValues = "0123456789abcdef";
@@ -66,3 +68,12 @@ overlay.addEventListener("click", () => {
     mobileMenu.classList.remove("active");
     overlay.classList.remove("active");
 });
+// Saved to localStorage
+favIcon.addEventListener("click", () => {
+    let currentGradient = `background-image: linear-gradient(to right, ${rgb1}, ${rgb2})`;
+    let savedGradient = JSON.parse(localStorage.getItem("gradient")) || [];
+    if(!savedGradient.includes(currentGradient)){
+        savedGradient.push(currentGradient);
+        localStorage.setItem("gradient", JSON.stringify(savedGradient));
+    }
+})
